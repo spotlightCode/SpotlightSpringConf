@@ -20,6 +20,16 @@
             "projectName": "registry-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProxyServiceApplication<proxy-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "spotlight.proxy_service.ProxyServiceApplication",
+            "projectName": "proxy-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
