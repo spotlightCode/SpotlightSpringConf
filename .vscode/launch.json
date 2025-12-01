@@ -19,7 +19,8 @@
             "mainClass": "spotlight.registry_service.RegistryServiceApplication",
             "projectName": "registry-service",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=44339 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=registry-service"
         },
         {
             "type": "java",
@@ -28,6 +29,17 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "spotlight.proxy_service.ProxyServiceApplication",
             "projectName": "proxy-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=36647 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=proxy-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CatalogPresentationServiceApplication<catalog-presentation-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.spotlight.catalog_presentation_service.CatalogPresentationServiceApplication",
+            "projectName": "catalog-presentation-service",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
